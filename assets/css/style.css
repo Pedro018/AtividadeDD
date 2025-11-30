@@ -55,6 +55,50 @@ p {
 .text-lg {
     font-size: 1.125rem;
 }
+* NAVBAR */
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+
+
+    background: hsla(40, 25%, 88%, 0.7);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid var(--primary);
+    padding: 1rem 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--foreground);
+    font-weight: 600;
+    font-size: 1.125rem;
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar a:hover {
+    color: var(--primary);
+    opacity: 0.8;
+}
 
 /* Containers */
 .container {
@@ -425,13 +469,40 @@ p {
 }
 
 .conclusion-card {
-    margin-top: 2rem;
     background-color: var(--background);
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 0.25rem;
+    margin-bottom: 1.5rem;
 }
 
 .conclusion-card p {
     font-size: 1.125rem;
+    color: var(--foreground);
+}
+.conclusion-card h3 {
+    color: var(--foreground);
+    margin-bottom: 0.5rem;
+}
+/* Mini Dev Section */
+.devs-mini {
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    text-align: center;
+}
+
+.devs-mini .dev-item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary);
+    background-color: var(--background);
+}
+
+.devs-mini p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
     color: var(--foreground);
 }
