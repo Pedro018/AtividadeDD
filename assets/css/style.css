@@ -55,51 +55,6 @@ p {
 .text-lg {
     font-size: 1.125rem;
 }
-* NAVBAR */
-.navbar {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-
-
-    background: hsla(40, 25%, 88%, 0.7);
-    backdrop-filter: blur(10px);
-    border-bottom: 2px solid var(--primary);
-    padding: 1rem 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    
-}
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 2.5rem;
-}
-
-.navbar li {
-    display: inline-block;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: var(--foreground);
-    font-weight: 600;
-    font-size: 1.125rem;
-    transition: color 0.3s ease, opacity 0.3s ease;
-}
-
-.navbar a:hover {
-    color: var(--primary);
-    opacity: 0.8;
-}
-
 /* Containers */
 .container {
     max-width: 56rem;
